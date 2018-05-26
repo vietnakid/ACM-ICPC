@@ -33,15 +33,14 @@ int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie();
-	// freopen("input", "r", stdin);
-	freopen("input", "w", stdout);
-    int n = 2e5;
+	freopen("/Users/macbook/Desktop/MyCPPLibrary/input", "w", stdout);
+    int n = 5000;
 
 	cout << n << endl;
 
-	for (int i = 0; i < n - 1; ++i)
-		cout << (i < n / 2 ? 1 : INF) << ' '; 
-	cout << INF << endl;
+	FOR(i, 0, n) {
+		cout << i << " ";
+	}
 
 	return 0;
 }
