@@ -3,13 +3,13 @@
 using namespace std;
 
 typedef long long ll;
-typedef long double ld;
 typedef vector<int> vi;
 typedef vector< vector<int> > vvi;
 typedef vector<ll> vl;
 typedef vector< vector<ll> > vvl;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
+typedef vector< vii> vvii;
 
 #define FOR(i, a, b) \
     for (int i = (a); i < (b); i++)
@@ -18,8 +18,8 @@ typedef vector<ii> vii;
 #define FORD(i, a, b) \
     for (int i = (a); i >= (b); i--)
 
-#define INF 2e9 // 2e9
-#define INFLL 2e18 // 2e18
+#define INF 1e9+7
+#define INFLL 2e18
 #define esp 1e-9
 #define PI 3.14159265
 
@@ -28,90 +28,54 @@ ll nMod = 1e9 + 7;
 inline ll GCD(ll a, ll b) {while (b != 0) {ll c = a % b; a = b; b = c;} return a;};
 inline ll LCM(ll a, ll b) {return (a / GCD(a,b)) * b;};
 
-priority_queue< ll, vector<ll>, greater<ll> > heap;
-
-vvi E;
-vi inDeg;
-int n;
-map<char, int> name;
-vector<char> order;
-vi isFree;
-int res = 0;
-
-void backtrack(string s) {
-    FOR(i, 0, n) {
-        if (isFree[i] && inDeg[i] == 0) {
-            // cout << order[i] << " " << inDeg[i] << endl;
-            isFree[i] = false;
-            FOR(j, 0, E[i].size()) {
-                inDeg[E[i][j]]--;
-            }
-
-            string x = s;
-            if (x.size() > 0) {
-                x += ' ';
-            }
-            x += (char)order[i];
-            
-            backtrack(x);
-
-            FOR(j, 0, E[i].size()) {
-                inDeg[E[i][j]]++;
-            }
-            isFree[i] = true;
-        }
-    }
-    if (s.size() == n*2-1) {
-        cout << s << endl;
-        res++;
-    }
-}
+int n, m, e, t;
+vvii arr;
+priority_queue<ii, vii, greater<ii> > pq;
+vi dist;
 
 int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie();
-	// freopen("/Users/macbook/Desktop/MyCPPLibrary/input", "r", stdin);
-	// freopen("/Users/macbook/Desktop/MyCPPLibrary/output", "w", stdout);
-    string s;
-    getline(cin, s);
-    stringstream ss(s);
-    int TC; 
-    ss >> TC;
-    FORE(tc, 1, TC) {
-        if (tc > 1) {
-            cout << endl;
+	freopen("/Users/macbook/Desktop/MyCPPLibrary/input", "r", stdin);
+	freopen("/Users/macbook/Desktop/MyCPPLibrary/output", "w", stdout);
+    int TC;
+    cin >> TC;
+    while (TC--) {
+        cin >> n >> e >> t >> m;
+        arr = vvii(n+1);
+        dist = vi(n+1, INF);
+        dist[e] = 0;
+        pq.push({0, e});
+        FOR(i, 0, m) {
+            int x, y, c;
+            cin >> x >> y >> c;
+            arr[y].push_back({x, c});
         }
-        name.clear();
-        order.clear();
-
-        getline(cin, s);
-        getline(cin, s);
-        vector<char> arr;
-        
-        for(int i = 0; i < s.size(); i+=2) {
-            arr.push_back(s[i]);
+        while (!pq.empty()) {
+            ii node = pq.top();
+            pq.pop();
+            int u = node.second;
+            int d = node.first;
+            if (d > dist[u]) {
+                continue;
+            }
+            FOR(i, 0, (int)arr[u].size()) {
+                int v = arr[u][i].first;
+                int c = arr[u][i].second;
+                if (dist[v] > d + c) {
+                    dist[v] = d + c;
+                    pq.push({dist[v], v});
+                }
+            }
         }
-        sort(arr.begin(), arr.end());
-        FOR(i, 0, arr.size()) {
-            name[arr[i]] = i;
-            order.push_back(arr[i]);
+        int res = 0;
+        FORE(i, 1, n) {
+            if (dist[i] <= t) {
+                res++;
+            }
         }
-        n = arr.size();
-        E = vvi(n);
-        inDeg = vi(n, 0);
-        isFree = vi(n, true);
-        getline(cin, s);
-        for(int i = 0; i < s.size(); i+=4) {
-            char u = s[i];
-            char v = s[i+2];
-            E[name[u]].push_back(name[v]);
-            inDeg[name[v]]++;
-        }
-        backtrack("");
-        if (res == 0) {
-            cout << "NO" << endl;
-        }
+        cout << res << endl;
     }
     return 0;
 }
