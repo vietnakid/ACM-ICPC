@@ -1,2 +1,3 @@
-ightX << endl;
-        cerr << leftY << " - " << rig
+b.size()) {
+
+    // }
