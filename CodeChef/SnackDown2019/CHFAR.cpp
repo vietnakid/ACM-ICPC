@@ -18,8 +18,8 @@ typedef vector< vii> vvii;
 #define FORD(i, a, b) \
     for (int i = (a); i >= (b); i--)
 
-#define INF 1e9+7
-#define INFLL 1e18+7
+#define INF 1000000007
+#define INFLL 1000000000000000000
 #define esp 1e-9
 #define PI 3.14159265
 
@@ -34,19 +34,21 @@ int main()
 	cin.tie();
 	// freopen("/Users/macbook/Desktop/MyCPPLibrary/input", "r", stdin);
 	// freopen("/Users/macbook/Desktop/MyCPPLibrary/output", "w", stdout);
-    ll n, k;
-    cin >> n >> k;
-    ll gcd;
-    cin >> gcd;
-    FOR(i, 0, n-1) {
-        ll x; cin >> x;
-        gcd = GCD(gcd, x);
-    }
-    if (k % gcd == 0) {
-        cout << k << endl;
-    } else {
-        ll a = k / gcd + 1;
-        cout << gcd * a << endl;
+    int TC; cin >> TC;
+    while (TC--) {
+        int n, k, s = 0;
+        cin >> n >> k;
+        FOR(i, 0, n) {
+            int x; cin >> x;
+            if (x != 1) {
+                s++;
+            }
+        }
+        if (s <= k) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
     }
     return 0;
 }

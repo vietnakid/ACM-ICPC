@@ -18,8 +18,8 @@ typedef vector< vii> vvii;
 #define FORD(i, a, b) \
     for (int i = (a); i >= (b); i--)
 
-#define INF 1e9+7
-#define INFLL 1e18+7
+#define INF 1000000007
+#define INFLL 1000000000000000000
 #define esp 1e-9
 #define PI 3.14159265
 
@@ -28,27 +28,34 @@ ll nMod = 1e9 + 7;
 inline ll GCD(ll a, ll b) {while (b != 0) {ll c = a % b; a = b; b = c;} return a;};
 inline ll LCM(ll a, ll b) {return (a / GCD(a,b)) * b;};
 
+ll n, m, k, l;
+vl arr;
+
 int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie();
 	// freopen("/Users/macbook/Desktop/MyCPPLibrary/input", "r", stdin);
 	// freopen("/Users/macbook/Desktop/MyCPPLibrary/output", "w", stdout);
-    int n;
-    cin >> n;
-    map<ll, ll> mp;
-    FOR(i, 0, n) {
-        int x;
-        cin >> x;
-        mp[x]++;
+    int TC; cin >> TC;
+    while (TC--) {
+        cin >> n >> m >> k >> l;
+        arr.resize(n);
+        FOR(i, 0, n) cin >> arr[i];
+        ll start = l * m;
+        sort(arr.begin(), arr.end());
+        ll res = INFLL;
+        FOR(i, 0, n) {
+            start += l;
+            res = min(res, start - arr[i]);
+        }
+        start += l;
+        if (k >= start) {
+            res = 0;    
+        } else {
+            res = min(res, start - k);
+        }
+        cout << max(res, ll(0)) << endl;
     }
-    ll res = 0;
-    ll n1 = 0, v1 = 0;
-    for(map<ll, ll>::iterator it = mp.begin(); it != mp.end(); it++) {
-        res += (it->first * n1)*(it->second * v1);
-        res += (it->first*it->first * (it->second)*(it->second - 1)/2);
-        n1 = it->first; v1 = it->second;
-    }
-    cout << res << endl;
     return 0;
 }

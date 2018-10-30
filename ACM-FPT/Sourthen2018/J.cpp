@@ -18,8 +18,8 @@ typedef vector< vii> vvii;
 #define FORD(i, a, b) \
     for (int i = (a); i >= (b); i--)
 
-#define INF 1e9+7
-#define INFLL 1e18+7
+#define INF 1000000007
+#define INFLL 1000000000000000000
 #define esp 1e-9
 #define PI 3.14159265
 
@@ -28,52 +28,44 @@ ll nMod = 1e9 + 7;
 inline ll GCD(ll a, ll b) {while (b != 0) {ll c = a % b; a = b; b = c;} return a;};
 inline ll LCM(ll a, ll b) {return (a / GCD(a,b)) * b;};
 
-int n;
-vvi arr;
-vi visited, finish;
-bool res;
-int cnt = 1;
-
-void DFS(int u) {
-    visited[u] = true;
-    FOR(i, 0, arr[u].size()) {
-        int v = arr[u][i];
-        if (!visited[v]) {
-            DFS(v);
-        } else if (!finish[v]) {
-            res = true;
-        }
-    }
-    finish[u] = true;
-}
-
 int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie();
 	// freopen("/Users/macbook/Desktop/MyCPPLibrary/input", "r", stdin);
 	// freopen("/Users/macbook/Desktop/MyCPPLibrary/output", "w", stdout);
+    int n;
     cin >> n;
-    arr = vvi(n+1);
-    visited = vi(n+1, false);
-    finish = vi(n+1, false);
-    res = false;
-    FORE(i, 1, n) {
-        int x;
-        cin >> x;
-        if (x <= n && x > 0) {
-            arr[x].push_back(i);
+    vi arr(n+1);
+    FOR(i, 0, n) {
+        cin >> arr[i];
+    }
+    int Res = INF;
+    FOR(t, 0, 12) {
+        int res = t;
+        vi tmp = arr;
+
+        tmp[0] = (tmp[0] - t);
+        if (tmp[0] < 0) {
+            tmp[0] += 12;
         }
-    }
-    FORE(i, 1, n) {
-        if (!visited[i]) {
-            DFS(i);
+        if (tmp[0] == 0) {
+            tmp[0] = 12;
         }
+
+        FOR(i, 0, n) {
+            int x = 12 - tmp[i];
+            res += x;
+            tmp[i+1] -= x;
+            if (tmp[i+1] < 0) {
+                tmp[i+1] += 12;
+            }
+            if (tmp[i+1] == 0) {
+                tmp[i+1] = 12;
+            }
+        }
+        Res = min(Res, res);
     }
-    if (res) {
-        cout << "0" << endl;
-    } else {
-        cout << "1" << endl;
-    }
+    cout << Res << endl;
     return 0;
 }

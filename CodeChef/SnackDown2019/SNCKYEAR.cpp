@@ -18,8 +18,8 @@ typedef vector< vii> vvii;
 #define FORD(i, a, b) \
     for (int i = (a); i >= (b); i--)
 
-#define INF 1e9+7
-#define INFLL 1e18+7
+#define INF 1000000007
+#define INFLL 1000000000000000000
 #define esp 1e-9
 #define PI 3.14159265
 
@@ -34,15 +34,23 @@ int main()
 	cin.tie();
 	// freopen("/Users/macbook/Desktop/MyCPPLibrary/input", "r", stdin);
 	// freopen("/Users/macbook/Desktop/MyCPPLibrary/output", "w", stdout);
-    int n;
-    cin >> n;
-    vi arr(n);
-    FOR(i, 0, n) {
-        cin >> arr[i];
-    }
-    reverse(arr.begin(), arr.end());
-    FOR(i, 0, n) {
-        cout << arr[i] << " ";
+    int TC;
+    cin >> TC;
+    while (TC--) {
+        int n;
+        cin >> n;
+        switch (n){
+            case 2010:
+            case 2015:
+            case 2016:
+            case 2017:
+            case 2019:
+                cout << "HOSTED" << endl;
+                break;
+            default:
+                cout << "NOT HOSTED" << endl;
+                break;
+        }
     }
     return 0;
 }
