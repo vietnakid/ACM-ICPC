@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[utf8]{vietnam}
+\usepackage[english]{babel}
+\usepackage{format}
+\usepackage{verbatim}
+
+\header{\LARGE PreVOI Đà Lạt 2018}
+
+\begin{document}
+
+\problemtitle{BIGBALL}
+
+\renewcommand{\baselinestretch}{1.25}
+\setlength{\parskip}{1em}
+
+Thủ môn Đặng Văn Lâm rất giỏi về hình học. Để chuẩn bị tinh thần nhận cúp trong trận chung kết AFF Cup lượt về giữa Việt Nam - Malaysia, huấn luyện viên Park Hang Seo đã đố Văn Lâm một bài toán như sau:
+
+Trong không gian ba chiều có $n$ trái banh hình cầu được đánh số từ $1$ đến $n$, trái banh thứ i được đặt tại điểm có toạ độ ($xi$, $yi$, $zi$) và có bán kính $ri$. Một chiếc xà ngang kéo dài vô tận và đi qua 2 điểm $A$, $B$ phân biệt có toạ độ $A(xA,yA,zA)$ và $B(xB,yB,zB)$, độ to của xà ngang là không đáng kể.
+
+Nhiệm vụ của Xuân Lâm là với mỗi trái banh thứ $i$, tìm ra $ri$ là bán kính nguyên tối thiểu sao cho trái banh thứ $i$ tiếp xúc hoặc cắt xà ngang $AB$. 
+
+Hãy giúp Văn Lâm tìm kết quả của bài toán trên.
+
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parskip}{0.25em}
+
+\heading{Dữ liệu}
+
+\begin{itemize}
+\item Dòng đầu tiên chứa số nguyên dương $n$ - là tổng số trái banh.
+\item Dòng thứ hai chứa ba số nguyên dương $xA, yA, zA$ - toạ độ của điểm A.
+\item Dòng thứ ba chứa ba số nguyên dương $xB, yB, zB$ - toạ độ của điểm B.
+\item n dòng tiếp theo, mỗi dòng chứa ba số nguyên $xi, yi, zi$ lần lượt là toạ độ của trái banh thứ i.
+\end{itemize}
+
+\heading{Kết quả}
+
+\begin{itemize}
+\item Gồm n dòng, mỗi dòng ứng với bán kính nguyên nhỏ nhất của trái banh thứ i để có thể tiếp xúc hoặc cắt xà ngang.
+\end{itemize}
+
+\heading{Ví dụ}
+
+\begin{example}
+\exmp{%
+5 
+0 0 0 
+1 0 0
+100 0 0
+5 1 0
+1 1 1
+1 2 3
+100 100 100
+}{%
+0
+1
+2
+4
+142
+}%
+\exmp{%
+5 
+5 2 3 
+8 7 6
+2 8 6
+8 5 4
+2 3 4
+0 0 0
+4 5 6
+}{%
+6
+2
+4
+4
+3
+}%
+\end{example}
+
+\heading{Giới hạn}
+
+\begin{itemize}
+\item Subtask 1 (30\%): $1 \leq n \leq 100$; $0 \leq x, y \leq 100$; $z = 0$.
+\item Subtask 2 (20\%): $1 \leq n \leq 10^5$; $0 \leq x, y \leq 10^9$; $z = 0$.
+\item Subtask 3 (20\%): $1 \leq n \leq 100$; $0 \leq x, y, z \leq 100$.
+\item Subtask 4 (30\%): $1 \leq n \leq 10^5$; $0 \leq x, y, z \leq 10^9$.
+\end{itemize}
+
+\end{document}
