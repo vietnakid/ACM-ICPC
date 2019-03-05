@@ -1,0 +1,67 @@
+            Username                           User       BITQUERY         NUMBER       RATIONAL         RBTREE         TUGWAR   Global
+           darkkcyan     darkkcyan &lt;i&gt;undefined&lt;/i&gt;            50             50             50             50              9      209 
+         canoccancap Cá Nóc Cắn Cáp _THPT Chuyên Cắn Cáp            50             50             50              9             25      184 
+               ndhuy                        NĐH ĐBK            50             50             50              0              0      150 
+       HuynhTienDung Huỳnh Tiến Dũng THPT Chuyên Bảo Lộc            50             50             50              0              0      150 
+           hung_brvt Nguyễn Văn Hưng THPT chuyên Lê Quý Đôn - Vũng Tàu            31             50             50              0             16      147 
+              tcknSS tcknSS the_crazy_knight_in_darkness             9             50             50              0             27      136 
+       hoanganht1k27 Anh Nguyen THPT Chuyên Hà Tĩnh            34             50             50              0              0      134 
+         pvannvuILQD Phạm Văn Nhật Vũ THPT chuyên Lê Quý Đôn - Quảng Trị            31             50             50              0              0      131 
+          ap14789654 Lê Mậu Anh Phong THPT Chuyên Lê Quý Đôn - Quảng Trị            31             50             50              0              0      131 
+             mbfibat Nguyễn Quang Long Thiếu 0.1 được giải VOI :_)            28             50             50              0              0      128 
+          GreenHat13 Trần Viết Thiện THPT Chuyên Lê Thánh Tông            19             50             50              0              8      127 
+           quyenmmai                  quyenmmai ILS            19             50             50              0              8      127 
+    thamtudeptrai007               Cao Anh Minh ILS            19             50             50              0              8      127 
+        cheeseburger cheeseburger hMhmmmhMMhMMhhhHHHmmHHHMMMMMmmmMMMHHhhh            19             50             50              0              3      122 
+             tthandb           Nguyen Duc Binh HUST            19             50             50              0              0      119 
+             trungvt  Vu Thanh Trung FPT University             0             50             50              0             16      116 
+              itachi Itachi Fanboi Trường đào tạo Ninja làng lá            50             50              0              6              0      106 
+            phongvan FML_PhongVan THPT Chuyên Nguyễn Trãi             3             50             50              0              0      103 
+              duyenn        Duyên Trường học gà con             0             50             50              0              0      100 
+               khanh Nguyễn Châu Khanh THPT Việt Trì            19             26             50              0              0       95 
+        helsinki2103 Vũ Đình Minh THPT Nguyễn Thượng Hiền            25              9             49              0              0       83 
+   tthanhminhlqd1112 Trương Thanh Minh THPT chuyên Lê Quý Đôn             0             18             50              0              8       76 
+              mht987 Phạm Anh Toàn Bách khoa hà nội             0             15             49              0              8       72 
+           daioto217                hello world abc             0             18             50              0              0       68 
+            tototete tototete THPT chuyên Nguyễn Đình Chiểu             0              0             50              0              0       50 
+        manthitcanoc         manthitcanoc Trường Kê             0              0             44              0              0       44 
+         ducnhan2502 Nguyễn Đức Nhân THPT Chuyên Thăng Long-Lâm Đồng             0              0             44              0              0       44 
+           huatho131 Nguyễn Hứa Thọ THPT chuyên Lê Thánh Tông            31              0              0              0              0       31 
+           lequocdat    LE QUOC DAT Chuyen VI Thanh             0             15             10              0              0       25 
+             ake0910 Nguyễn Văn Huân THPT Chuyên Lê Thánh Tông - Quảng Nam            19              0              0              0              0       19 
+            huyhuy11 Phạm Tăng Huy THPT Chuyên Lê Thánh Tông             0             15              0              0              0       15 
+         Giotdang2k3               Lo Hong THPT CHV             0              9              0              0              0        9 
+          phangiabao Phan Gia Bảo THPT Chuyên Vị Thanh             0              9              0              0              0        9 
+      canhtan1532003 Nguyễn Cảnh Tân THPT Chuyên Lê Quý Đôn             0              6              0              0              0        6 
+                abcd Abcd THPT chuyên Nguyễn Đình Chiểu - Đồng Tháp             0              0              0              0              0        0 
+      cong.trung.2k1 Trương Công Trung THPT Gia Định HCM             0              0              0              0              0        0 
+          tranthuyan Trần Thùy An Chuyên Lê Hồng Phong             0              0              0              0              0        0 
+               karma MyUncleIsBang AAAA - Chú Bằng Bụng Bự             0              0              0              0              0        0 
+             Houtaru Nguyễn Văn Duy THPT Chuyên Hùng Vương             0              0              0              0              0        0 
+          tuankiet65    Hồ Tuấn Kiệt FPT University             0              0              0              0              0        0 
+  nguyenphuocbinhhck Nguyễn Phước Bình THPT chuyên NTT             0              0              0              0              0        0 
+             tkiet12 Trần Kiệt THPT Nguyễn ĐÌnh Chiểu             0              0              0              0              0        0 
+         buihoat2003 Bùi Minh Hoạt THPT Chuyên Hùng Vương - Phú Thọ             0              0              0              0              0        0 
+         maitandat03                     Đạt 09 LQĐ             0              0              0              0              0        0 
+                 imc       Tran Quang Minh Thpt Gta             0              0              0              0              0        0 
+             ndh2003 Nguyễn Đức Huy THPT Lê Hồng Phong - Đồng Nai             0              0              0              0              0        0 
+       lavangmuadong        Lá vàng mùa đông Mùa hạ             0              0              0              0              0        0 
+         quynhnhu123 Vũ Thị Quỳnh Như THPT Chuyên Hùng Vương - Phú Thọ             0              0              0              0              0        0 
+              rocker Rocker THPT Chuyên Lê Quý Đôn - Khánh Hòa             0              0              0              0              0        0 
+              ffyytt                 Họ và tên THPT             0              0              0              0              0        0 
+         wendy_virgo                Thanh Tuyền FTV             0              0              0              0              0        0 
+                Zeno Hà Đức Thành Viên THCS-THPT Nguyễn Khuyến             0              0              0              0              0        0 
+                test Nguyễn Văn Tèo THPT Chuyển Giao Công Nghệ             0              0              0              0              0        0 
+            ngoctoan Ngọc Toàn THPT Chuyên Hoàng Văn Thụ - Hòa Bình             0              0              0              0              0        0 
+      nguyenguyen357 Nguyễn Đăng Nguyên THPT Chuyên Long An             0              0              0              0              0        0 
+       hoanglam_itk6 Trần Lê Hoàng Lâm THPT Chuyên Lê Thánh Tông - Hội An             0              0              0              0              0        0 
+      nguyenkhoa0721 Bùi Đình Nguyên Khoa Chuyen Kon Tum             0              0              0              0              0        0 
+             unnamed                Unnamed unknown             0              0              0              0              0        0 
+                 vqt        Vu Thanh FPT University             0              0              0              0              0        0 
+               tluan                      TLuan ...             0              0              0              0              0        0 
+           zipdang04 Đặng Xuân Minh Hiếu THCS Nguyễn Văn Cừ - Đà Nẵng             0              0              0              0              0        0 
+             abcqwer Hồ Văn Sơn THPT chuyên Quốc Học Huế             0              0              0              0              0        0 
+      tin2016_ndhanh Nguyễn Đức Hạnh THPT Chuyên Lương Thế Vinh             0              0              0              0              0        0 
+        valueking987 Nguyễn Mai Vĩnh THPT Chuyên Thăng Long - Đà Lạt             0              0              0              0              0        0 
+          nonamenow1      happy potato Đoán xem :))             0              0              0              0              0        0 
+       xuanvuong2105 Trương Xuân Vương THPT Ninh Thuận             0              0              0              0              0        0 
